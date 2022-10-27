@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -10,7 +10,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1 className="text-pink-500">Hello World!</h1>
+      <motion.div
+        initial={{ scale: 2 }}
+        animate={{ scale: 1 }}
+        transition={{
+          type: "spring",
+          stiffness: 260,
+          damping: 20,
+        }}
+        className="bg-white h-96 bg-HeroImg flex flex-col items-center justify-center space-y-4 m-5 rounded-lg shadow-lg shadow-neutral-800"
+      >
+        <h1 className="font-extrabold text-9xl font-Mont drop-shadow-xl shadow-white">
+          NFT
+        </h1>
+        <h1 className="font-extrabold drop-shadow-xl font-Mont shadow-white text-8xl">
+          MarketPlace
+        </h1>
+      </motion.div>
     </div>
   );
 }
