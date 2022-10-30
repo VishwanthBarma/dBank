@@ -12,6 +12,12 @@ function TopCollections() {
         </div>
         <Collection />
         <Collection />
+        <Collection />
+        <Collection />
+        <Collection />
+        <Collection />
+        <Collection />
+        <Collection />
       </div>
     </div>
   );

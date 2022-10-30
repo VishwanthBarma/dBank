@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { motion } from "framer-motion";
 import TopCollections from "../components/TopCollections/TopCollections";
+import { ethers } from "ethers";
+import { nftaddress, nftmarketaddress } from "../config";
+import { Interface } from "ethers/lib/utils";
 
 export default function Home() {
   return (
