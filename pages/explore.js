@@ -1,7 +1,7 @@
 import React from "react";
 
-function explore() {
+function Explore() {
   return <div>explore</div>;
 }
 
-export default explore;
+export default Explore;
